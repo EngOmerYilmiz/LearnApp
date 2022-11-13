@@ -14,18 +14,5 @@ object Supplier{
         Hobby("Watching"),
         Hobby("Reading"),
         Hobby("Swimming"),
-        Hobby("Writing"),
-        Hobby("Gaming"),
-        Hobby("Walking"),
-        Hobby("Learning"),
-        Hobby("Watching"),
-        Hobby("Reading"),
-        Hobby("Swimming"),
-        Hobby("Writing"),
-        Hobby("Gaming"),
-        Hobby("Walking"),
-        Hobby("Learning"),
-        Hobby("Watching")
         )
-
 }

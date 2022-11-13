@@ -1,9 +1,9 @@
 package com.example.learnapp
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 class HobbiesActivity:AppCompatActivity() {
 
@@ -11,12 +11,13 @@ class HobbiesActivity:AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hobbies)
 
+        val recyclerViewer = findViewById<RecyclerView>(R.id.recyclerView)
         val layoutManager = LinearLayoutManager(this)
         layoutManager.orientation = LinearLayoutManager.VERTICAL
-        findViewById<RecyclerView>(R.id.recyclerView).layoutManager = layoutManager
+        recyclerViewer.layoutManager = layoutManager
 
         val adapter = HobbiesAdapter(this,Supplier.hobbies)
-        findViewById<RecyclerView>(R.id.recyclerView).adapter = adapter
+        recyclerViewer.adapter = adapter
 
 
     }
